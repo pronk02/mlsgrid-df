@@ -23,11 +23,7 @@
 		"type": "Xml",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation",
-				"relativeUrl": {
-					"value": "@{dataset().FullUrl}",
-					"type": "Expression"
-				}
+				"type": "HttpServerLocation"
 			},
 			"compression": {
 				"type": "gzip"
