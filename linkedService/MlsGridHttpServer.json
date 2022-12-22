@@ -1,10 +1,15 @@
 {
 	"name": "MlsGridHttpServer",
 	"properties": {
+		"parameters": {
+			"UrlPath": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "https://api.mlsgrid.com/v2",
+			"url": "\"https://api.mlsgrid.com/v2/@{linkedService().UrlPath}\"",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous",
 			"authHeaders": {
