@@ -33,7 +33,10 @@
 						"referenceName": "ds_HttpXml",
 						"type": "DatasetReference",
 						"parameters": {
-							"FullUrl": "https://api.mlsgrid.com/v2/$metadata"
+							"FullUrl": {
+								"value": "@{pipeline().parameters.FullUrl}",
+								"type": "Expression"
+							}
 						}
 					},
 					"firstRowOnly": false
@@ -42,7 +45,8 @@
 		],
 		"parameters": {
 			"FullUrl": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "https://api.mlsgrid.com/v2/$metadata"
 			}
 		},
 		"annotations": []
