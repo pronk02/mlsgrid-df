@@ -5,11 +5,6 @@
 			"referenceName": "MlsGridHttpServer",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"UrlPath": {
-				"type": "string"
-			}
-		},
 		"folder": {
 			"name": "HTTP"
 		},
@@ -17,11 +12,10 @@
 		"type": "Xml",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation",
-				"relativeUrl": {
-					"value": "@dataset().UrlPath",
-					"type": "Expression"
-				}
+				"type": "HttpServerLocation"
+			},
+			"compression": {
+				"type": "gzip"
 			}
 		}
 	}
