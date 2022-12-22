@@ -21,7 +21,8 @@
 					"type": "SecureString",
 					"value": "**********"
 				}
-			}
+			},
+			"additionalHeaders": "Accept-Encoding: gzip, deflate"
 		}
 	}
 }
