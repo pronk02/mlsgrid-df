@@ -3,7 +3,13 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "MlsGridHttpServer",
-			"type": "LinkedServiceReference"
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"FullUrl": {
+					"value": "@dataset().FullUrl",
+					"type": "Expression"
+				}
+			}
 		},
 		"parameters": {
 			"FullUrl": {
