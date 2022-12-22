@@ -22,6 +22,9 @@
 					"value": "@dataset().UrlPath",
 					"type": "Expression"
 				}
+			},
+			"compression": {
+				"type": "gzip"
 			}
 		},
 		"schema": {}
