@@ -16,10 +16,6 @@
 						"type": "LinkedServiceReference"
 					},
 					"secretName": "mlsgrid-api-key"
-				},
-				"Accept-Encoding": {
-					"type": "SecureString",
-					"value": "**********"
 				}
 			},
 			"additionalHeaders": "Accept-Encoding: gzip, deflate"
