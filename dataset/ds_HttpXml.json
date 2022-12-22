@@ -19,7 +19,7 @@
 			"location": {
 				"type": "HttpServerLocation",
 				"relativeUrl": {
-					"value": "@dataset().FullUrl",
+					"value": "@{dataset().FullUrl}",
 					"type": "Expression"
 				}
 			},
