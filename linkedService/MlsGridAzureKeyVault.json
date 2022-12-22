@@ -1,0 +1,11 @@
+{
+	"name": "MlsGridAzureKeyVault",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://mlsgrid-kv.vault.azure.net/"
+		}
+	}
+}
