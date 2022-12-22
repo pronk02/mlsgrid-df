@@ -1,0 +1,19 @@
+{
+	"name": "ds_HttpXml",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "MlsGridHttpServer",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "HTTP"
+		},
+		"annotations": [],
+		"type": "Xml",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			}
+		}
+	}
+}
