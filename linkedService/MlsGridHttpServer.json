@@ -9,7 +9,7 @@
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "\"https://api.mlsgrid.com/v2/@{linkedService().UrlPath}\"",
+			"url": "@{concat(\n    'https://api.mlsgrid.com/v2/',\n    linkedService().UrlPath\n)}",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous",
 			"authHeaders": {
