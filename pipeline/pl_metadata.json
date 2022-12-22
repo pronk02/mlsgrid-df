@@ -19,7 +19,9 @@
 						"type": "XmlSource",
 						"storeSettings": {
 							"type": "HttpReadSettings",
-							"requestMethod": "GET"
+							"requestMethod": "GET",
+							"additionalHeaders": "Accept-Encoding: gzip, deflate, br",
+							"requestTimeout": ""
 						},
 						"formatSettings": {
 							"type": "XmlReadSettings",
@@ -31,17 +33,15 @@
 						"referenceName": "ds_HttpXml",
 						"type": "DatasetReference",
 						"parameters": {
-							"UrlPath": {
-								"value": "@pipeline().parameters.UrlPath",
-								"type": "Expression"
-							}
+							"FullUrl": "https://api.mlsgrid.com/v2/$metadata"
 						}
-					}
+					},
+					"firstRowOnly": false
 				}
 			}
 		],
 		"parameters": {
-			"UrlPath": {
+			"FullUrl": {
 				"type": "string"
 			}
 		},
