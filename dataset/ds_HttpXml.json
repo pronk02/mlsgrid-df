@@ -6,7 +6,7 @@
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"UrlPath": {
+			"FullUrl": {
 				"type": "string"
 			}
 		},
@@ -19,7 +19,7 @@
 			"location": {
 				"type": "HttpServerLocation",
 				"relativeUrl": {
-					"value": "@dataset().UrlPath",
+					"value": "@dataset().FullUrl",
 					"type": "Expression"
 				}
 			},
