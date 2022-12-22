@@ -10,8 +10,12 @@
 			"authenticationType": "Anonymous",
 			"authHeaders": {
 				"Authorization": {
-					"type": "SecureString",
-					"value": "**********"
+					"type": "AzureKeyVaultSecret",
+					"store": {
+						"referenceName": "MlsGridAzureKeyVault",
+						"type": "LinkedServiceReference"
+					},
+					"secretName": "mlsgrid-api-key"
 				},
 				"Accept-Encoding": {
 					"type": "SecureString",
