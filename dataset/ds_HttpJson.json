@@ -1,0 +1,20 @@
+{
+	"name": "ds_HttpJson",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "MlsGridHttpServer",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "HTTP"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			}
+		},
+		"schema": {}
+	}
+}
