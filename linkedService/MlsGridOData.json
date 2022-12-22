@@ -2,6 +2,7 @@
 	"name": "MlsGridOData",
 	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
+		"description": "Accept-Encoding: gzip, deflate",
 		"annotations": [],
 		"type": "OData",
 		"typeProperties": {
@@ -9,6 +10,10 @@
 			"authenticationType": "Anonymous",
 			"authHeaders": {
 				"Authorization": {
+					"type": "SecureString",
+					"value": "**********"
+				},
+				"Accept-Encoding": {
 					"type": "SecureString",
 					"value": "**********"
 				}
