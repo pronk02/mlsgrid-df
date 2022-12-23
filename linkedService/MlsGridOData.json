@@ -1,0 +1,26 @@
+{
+	"name": "MlsGridOData",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "Accept-Encoding: gzip, deflate",
+		"annotations": [],
+		"type": "OData",
+		"typeProperties": {
+			"url": "https://api.mlsgrid.com/v2/$metadata",
+			"authenticationType": "Anonymous",
+			"authHeaders": {
+				"Authorization": {
+					"type": "AzureKeyVaultSecret",
+					"store": {
+						"referenceName": "MlsGridAzureKeyVault",
+						"type": "LinkedServiceReference"
+					},
+					"secretName": "mlsgrid-api-key"
+				},
+				"Accept-Encoding": {
+					"value": "gzip, deflate"
+				}
+			}
+		}
+	}
+}

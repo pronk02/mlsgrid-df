@@ -1,0 +1,9 @@
+{
+	"name": "mlsgrid-df",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "dc59e460-b14e-4d85-857e-f05cee608bc1",
+		"tenantId": "5d7107c1-196b-42ab-82d1-d90bdbe3c34e"
+	}
+}
